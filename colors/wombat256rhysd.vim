@@ -9,6 +9,11 @@
 
 set background=dark
 
+" load once
+if exists('colors_name') && colors_name == 'wombat256rhysd'
+    finish
+endif
+
 if version > 580
 	hi clear
 	if exists("syntax_on")
