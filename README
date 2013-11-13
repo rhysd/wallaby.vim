@@ -1,6 +1,0 @@
-Wallaby color theme is modified version of wombat256mod.
-Background color is changed to black and some highlights are added with the progress of Vim.
-
-wombat256mod (vimscript #1778) is a version of Wombat (vimscript #1778) by Lars Nielsen that also works on xterms with 256 colors.
-
-Wallaby is distributed under the same license as wombat256mod's one.
