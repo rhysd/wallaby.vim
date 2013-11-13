@@ -18,7 +18,7 @@ if version > 580
 	endif
 endif
 
-let colors_name = "wombat256rhysd"
+let colors_name = "wallaby"
 
 
 " General colors
@@ -95,5 +95,6 @@ hi! link FoldColumn		Folded
 hi! link CursorColumn	CursorLine
 hi! link NonText		LineNr
 hi! link CursorLineNr	Identifier
+hi! link ColorColumn	StatusLine
 
 " vim:set ts=4 sw=4 noet:
