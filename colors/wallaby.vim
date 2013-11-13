@@ -18,11 +18,17 @@ if version > 580
     endif
 endif
 
-let colors_name = "wallaby"
-
+let g:colors_name = "wallaby"
+let g:wallaby_transparent_bg = get(g:, "wallaby_transparent_bg", 0)
 
 " General colors
-hi Normal       ctermfg=252     ctermbg=16      cterm=none      guifg=#e3e0d7   guibg=#242424   gui=none
+if g:wallaby_transparent_bg
+    hi Normal       ctermfg=252     ctermbg=none    cterm=none      guifg=#e3e0d7   guibg=#242424   gui=none
+    hi LineNr       ctermfg=241     ctermbg=none     cterm=none      guifg=#857b6f   guibg=#080808   gui=none
+else
+    hi Normal       ctermfg=252     ctermbg=16      cterm=none      guifg=#e3e0d7   guibg=#242424   gui=none
+    hi LineNr       ctermfg=241     ctermbg=232     cterm=none      guifg=#857b6f   guibg=#080808   gui=none
+endif
 hi Cursor       ctermfg=234     ctermbg=228     cterm=none      guifg=#242424   guibg=#eae788   gui=none
 hi Visual       ctermfg=251     ctermbg=239     cterm=none      guifg=#c3c6ca   guibg=#554d4b   gui=none
 hi VisualNOS    ctermfg=251     ctermbg=236     cterm=none      guifg=#c3c6ca   guibg=#303030   gui=none
@@ -32,7 +38,6 @@ hi Title        ctermfg=230                     cterm=bold      guifg=#ffffd7   
 hi StatusLine   ctermfg=230     ctermbg=238     cterm=none      guifg=#ffffd7   guibg=#444444   gui=italic
 hi VertSplit    ctermfg=238     ctermbg=238     cterm=none      guifg=#444444   guibg=#444444   gui=none
 hi StatusLineNC ctermfg=241     ctermbg=238     cterm=none      guifg=#857b6f   guibg=#444444   gui=none
-hi LineNr       ctermfg=241     ctermbg=232     cterm=none      guifg=#857b6f   guibg=#080808   gui=none
 hi SpecialKey   ctermfg=241     ctermbg=235     cterm=none      guifg=#626262   guibg=#2b2b2b   gui=none
 hi WarningMsg   ctermfg=203                                     guifg=#ff5f55
 hi ErrorMsg     ctermfg=124     ctermbg=236     cterm=bold      guifg=#ff2026   guibg=#3a3a3a   gui=bold
