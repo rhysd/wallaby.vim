@@ -35,7 +35,7 @@ hi VisualNOS    ctermfg=251     ctermbg=236     cterm=none      guifg=#c3c6ca   
 hi Search       ctermfg=177     ctermbg=241     cterm=none      guifg=#d787ff   guibg=#636066   gui=none
 hi Folded       ctermfg=103     ctermbg=237     cterm=none      guifg=#a0a8b0   guibg=#3a4046   gui=none
 hi Title        ctermfg=230                     cterm=bold      guifg=#ffffd7                   gui=bold
-hi StatusLine   ctermfg=230     ctermbg=238     cterm=none      guifg=#ffffd7   guibg=#444444   gui=italic
+hi StatusLine   ctermfg=230     ctermbg=238     cterm=none      guifg=#ffffd7   guibg=#444444   gui=none
 hi VertSplit    ctermfg=238     ctermbg=238     cterm=none      guifg=#444444   guibg=#444444   gui=none
 hi StatusLineNC ctermfg=241     ctermbg=238     cterm=none      guifg=#857b6f   guibg=#444444   gui=none
 hi SpecialKey   ctermfg=241     ctermbg=235     cterm=none      guifg=#626262   guibg=#2b2b2b   gui=none
@@ -86,9 +86,9 @@ hi Function     ctermfg=192     cterm=none      guifg=#cae982   gui=none
 hi Identifier   ctermfg=192     cterm=none      guifg=#cae982   gui=none
 hi Type         ctermfg=186     cterm=none      guifg=#d4d987   gui=none
 hi Special      ctermfg=229     cterm=none      guifg=#eadead   gui=none
-hi String       ctermfg=113     cterm=none      guifg=#95e454   gui=italic
-hi Comment      ctermfg=246     cterm=none      guifg=#9c998e   gui=italic
-hi Todo         ctermfg=101     cterm=none      guifg=#857b6f   gui=italic
+hi String       ctermfg=113     cterm=none      guifg=#95e454   gui=none
+hi Comment      ctermfg=246     cterm=none      guifg=#9c998e   gui=none
+hi Todo         ctermfg=101     cterm=none      guifg=#857b6f   gui=none
 
 " Spells
 hi SpellBad   ctermfg=16 ctermbg=203 cterm=none guifg=#242424 guibg=#ff5f55 gui=none
