@@ -67,10 +67,6 @@ hi DiffChange                   ctermbg=237                                     
 "hi Question
 "hi Scrollbar
 "hi SignColumn
-"hi SpellBad
-"hi SpellCap
-"hi SpellLocal
-"hi SpellRare
 "hi TabLine
 "hi TabLineFill
 "hi TabLineSel
@@ -94,6 +90,11 @@ hi String       ctermfg=113     cterm=none      guifg=#95e454   gui=italic
 hi Comment      ctermfg=246     cterm=none      guifg=#9c998e   gui=italic
 hi Todo         ctermfg=101     cterm=none      guifg=#857b6f   gui=italic
 
+" Spells
+hi SpellBad   ctermfg=16 ctermbg=203 cterm=none guifg=#242424 guibg=#ff5f55 gui=none
+hi SpellCap   ctermfg=16 ctermbg=229 cterm=none guifg=#242424 guibg=#eadead gui=none
+hi SpellLocal ctermfg=16 ctermbg=111 cterm=none guifg=#242424 guibg=#88b8f6 gui=none
+hi SpellRare  ctermbg=53 guibg=#72186e
 
 " Links
 hi! link FoldColumn     Folded
@@ -102,4 +103,4 @@ hi! link NonText        LineNr
 hi! link CursorLineNr   Identifier
 hi! link ColorColumn    StatusLine
 
-" vim:set ts=4 sw=4 noet:
+" vim:set ts=4 sw=4:
